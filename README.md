@@ -87,7 +87,7 @@ echo 'vhci-hcd' >> /etc/modules
 Then we create a generic client service to bind multiple devices, each with one service.
 
 Create a new file `nano /lib/systemd/system/usbip@.service`
-with the following content: 
+with the following content (and replace `192.168.111.250` by our raspberry pi IP address): 
 ```
 [Unit]
 Description=usbip client
